@@ -1,0 +1,35 @@
+# Windows system files
+desktop.ini
+Thumbs.db
+ehthumbs.db
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Environment variables and secrets
+.env
+.env.*
+
+# Model weights and caches
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+.cache/
+huggingface_cache/
+
+
+
+# Temporary files
+*.tmp
+*.bak
+.DS_Store
