@@ -1,0 +1,2 @@
+model,paired_faces,source_images,failed_or_error_rows_in_input,plain_balanced_accuracy,sov_balanced_accuracy,delta_balanced_accuracy_pp,sum_class_ba_contributions_pp,plain_accuracy,sov_accuracy,delta_accuracy_pp,sum_class_accuracy_contributions_pp,bootstrap_resamples,bootstrap_seed
+LLaVA,1473,1461,0,0.42830816879597366,0.3743089430894309,-5.399922570654275,-5.399922570654276,0.4467073998642227,0.3822131704005431,-6.449422946367961,-6.449422946367955,2000,42

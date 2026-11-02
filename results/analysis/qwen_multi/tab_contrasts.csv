@@ -1,0 +1,118 @@
+subset,contrast,what,metric,n,delta,ci_lo,ci_hi,p_boot,excludes_zero
+all,sov|numbered - plain|positional,SoV as designed vs Plain,acc_all,2816,-0.14879262447357178,-0.16998782753944397,-0.12742556035518646,0.0,True
+all,sov|numbered - plain|positional,SoV as designed vs Plain,acc_expr,301,-0.13289037346839905,-0.1931835699826479,-0.07457355447113516,0.0,True
+all,sov|numbered - plain|positional,SoV as designed vs Plain,acc_happy,1805,-0.23213297128677368,-0.2587854936718941,-0.2035647600889206,0.0,True
+all,sov|numbered - plain|positional,SoV as designed vs Plain,bal,2816,-0.10449683666229248,-0.14129981324076651,-0.0682550959289074,0.0,True
+all,box_number|numbered - plain|positional,Box+Number as designed vs Plain,acc_all,2816,0.05042612552642822,0.03384672701358795,0.0660789355635643,0.0,True
+all,box_number|numbered - plain|positional,Box+Number as designed vs Plain,acc_expr,301,0.009966760873794556,-0.03767773285508156,0.05592927187681194,0.713,False
+all,box_number|numbered - plain|positional,Box+Number as designed vs Plain,acc_happy,1805,0.07811635732650757,0.0566960409283638,0.09867757856845853,0.0,True
+all,box_number|numbered - plain|positional,Box+Number as designed vs Plain,bal,2816,0.03241804242134094,0.0006305612623691561,0.06459215506911278,0.048,True
+all,box|positional - plain|positional,Boxes alone vs Plain (same prompt),acc_all,2816,-0.004261374473571777,-0.016744033992290498,0.008535306155681608,0.514,False
+all,box|positional - plain|positional,Boxes alone vs Plain (same prompt),acc_expr,301,-0.006644517183303833,-0.03960591331124306,0.02756026461720466,0.789,False
+all,box|positional - plain|positional,Boxes alone vs Plain (same prompt),acc_happy,1805,0.0016620755195617676,-0.01427362561225891,0.017095080018043513,0.876,False
+all,box|positional - plain|positional,Boxes alone vs Plain (same prompt),bal,2816,-0.001893371343612671,-0.025840342789888383,0.023431713134050357,0.881,False
+all,box_number|numbered - box|positional,Numbers + numbered prompt vs boxes,acc_all,2816,0.0546875,0.040269315242767334,0.0697187066078186,0.0,True
+all,box_number|numbered - box|positional,Numbers + numbered prompt vs boxes,acc_expr,301,0.01661127805709839,-0.026403640955686567,0.05803044177591795,0.498,False
+all,box_number|numbered - box|positional,Numbers + numbered prompt vs boxes,acc_happy,1805,0.0764542818069458,0.05790586620569229,0.09542411267757415,0.0,True
+all,box_number|numbered - box|positional,Numbers + numbered prompt vs boxes,bal,2816,0.03431141376495361,0.006415412575006486,0.063126353174448,0.02,True
+all,sov|numbered - box_number|numbered,"Landmarks (same overlay type, same prompt)",acc_all,2816,-0.19921875,-0.2198389634490013,-0.17972954362630847,0.0,True
+all,sov|numbered - box_number|numbered,"Landmarks (same overlay type, same prompt)",acc_expr,301,-0.1428571343421936,-0.201755041629076,-0.08591012097895145,0.0,True
+all,sov|numbered - box_number|numbered,"Landmarks (same overlay type, same prompt)",acc_happy,1805,-0.31024932861328125,-0.3338714025914669,-0.28547657281160355,0.0,True
+all,sov|numbered - box_number|numbered,"Landmarks (same overlay type, same prompt)",bal,2816,-0.13691487908363342,-0.17456240728497505,-0.09982363730669022,0.0,True
+all,box_number|numbered - box_number|positional,Using the number vs counting (same image),acc_all,997,0.00902712345123291,-0.004028403759002685,0.022483229637145996,0.208,False
+all,box_number|numbered - box_number|positional,Using the number vs counting (same image),acc_expr,225,0.008888885378837585,-0.015001884847879409,0.03334033414721485,0.634,False
+all,box_number|numbered - box_number|positional,Using the number vs counting (same image),acc_happy,405,0.0024691224098205566,-0.018738722801208495,0.024324461817741394,0.897,False
+all,box_number|numbered - box_number|positional,Using the number vs counting (same image),bal,997,0.01347959041595459,-0.005627672374248505,0.035084366053342766,0.182,False
+all,sov|numbered - sov|positional,Using the number vs counting (SoV image),acc_all,997,0.005015045404434204,-0.008841076493263244,0.017801611125469206,0.564,False
+all,sov|numbered - sov|positional,Using the number vs counting (SoV image),acc_expr,225,-0.031111106276512146,-0.07258237339556217,0.00487864930182695,0.119,False
+all,sov|numbered - sov|positional,Using the number vs counting (SoV image),acc_happy,405,0.007407426834106445,-0.0025321319699287415,0.018423490971326815,0.238,False
+all,sov|numbered - sov|positional,Using the number vs counting (SoV image),bal,997,-0.012814640998840332,-0.03742085322737694,0.010141443461179726,0.274,False
+all,box_number|positional - box|positional,Number tags themselves (same prompt),acc_all,997,0.06820458173751831,0.046511098742485046,0.09126245230436325,0.0,True
+all,box_number|positional - box|positional,Number tags themselves (same prompt),acc_expr,225,0.02222222089767456,-0.017176800966262815,0.05983103998005389,0.312,False
+all,box_number|positional - box|positional,Number tags themselves (same prompt),acc_happy,405,0.1308642327785492,0.09068641364574433,0.1708504550158977,0.0,True
+all,box_number|positional - box|positional,Number tags themselves (same prompt),bal,997,0.04006695747375488,0.014687538146972656,0.06600886434316634,0.006,True
+all,sov|positional - plain|positional,SoV marks only (same prompt) vs Plain,acc_all,997,-0.05717149376869202,-0.08792689964175224,-0.026395709812641145,0.0,True
+all,sov|positional - plain|positional,SoV marks only (same prompt) vs Plain,acc_expr,225,-0.04888889193534851,-0.11405118014663458,0.017939233407378186,0.173,False
+all,sov|positional - plain|positional,SoV marks only (same prompt) vs Plain,acc_happy,405,-0.1604938507080078,-0.21370015479624271,-0.10653642043471337,0.0,True
+all,sov|positional - plain|positional,SoV marks only (same prompt) vs Plain,bal,997,-0.043598324060440063,-0.08244575262069702,-0.002510499954223651,0.037,True
+mixed,sov|numbered - plain|positional,SoV as designed vs Plain,acc_all,997,-0.05215644836425781,-0.08349149003624916,-0.02258652746677399,0.0,True
+mixed,sov|numbered - plain|positional,SoV as designed vs Plain,acc_expr,225,-0.07999999821186066,-0.14496046975255011,-0.020512819290161133,0.008,True
+mixed,sov|numbered - plain|positional,SoV as designed vs Plain,acc_happy,405,-0.15308642387390137,-0.20802226215600966,-0.09812388122081761,0.0,True
+mixed,sov|numbered - plain|positional,SoV as designed vs Plain,bal,997,-0.056412965059280396,-0.0951086051762104,-0.01921269893646241,0.002,True
+mixed,sov|numbered - plain|positional,SoV as designed vs Plain,xref,997,0.01805416248746239,-0.008352046455325333,0.04522242651791031,0.195,False
+mixed,box_number|numbered - plain|positional,Box+Number as designed vs Plain,acc_all,997,0.07522571086883545,0.04746457040309906,0.10272967815399167,0.0,True
+mixed,box_number|numbered - plain|positional,Box+Number as designed vs Plain,acc_expr,225,0.035555556416511536,-0.017107194289565086,0.08714105561375615,0.205,False
+mixed,box_number|numbered - plain|positional,Box+Number as designed vs Plain,acc_happy,405,0.14814814925193787,0.1012908823788166,0.19580656886100767,0.0,True
+mixed,box_number|numbered - plain|positional,Box+Number as designed vs Plain,bal,997,0.05931088328361511,0.021458359062671663,0.09828135892748831,0.001,True
+mixed,box_number|numbered - plain|positional,Box+Number as designed vs Plain,xref,997,-0.07221664994984958,-0.09643500814684271,-0.04746840460058928,0.0,True
+mixed,box|positional - plain|positional,Boxes alone vs Plain (same prompt),acc_all,997,-0.0020059943199157715,-0.021875958144664764,0.01777065843343731,0.866,False
+mixed,box|positional - plain|positional,Boxes alone vs Plain (same prompt),acc_expr,225,0.00444445013999939,-0.03149694949388504,0.04065686464309689,0.926,False
+mixed,box|positional - plain|positional,Boxes alone vs Plain (same prompt),acc_happy,405,0.014814794063568115,-0.0189618818461895,0.04909560158848762,0.435,False
+mixed,box|positional - plain|positional,Boxes alone vs Plain (same prompt),bal,997,0.00576433539390564,-0.02016296535730362,0.03413929343223567,0.674,False
+mixed,box|positional - plain|positional,Boxes alone vs Plain (same prompt),xref,997,-0.015045135406218657,-0.03349766197394414,0.004086749576150671,0.14,False
+mixed,box_number|numbered - box|positional,Numbers + numbered prompt vs boxes,acc_all,997,0.07723170518875122,0.052237372100353244,0.10206934735178944,0.0,True
+mixed,box_number|numbered - box|positional,Numbers + numbered prompt vs boxes,acc_expr,225,0.031111106276512146,-0.01435406506061554,0.07499998845160008,0.201,False
+mixed,box_number|numbered - box|positional,Numbers + numbered prompt vs boxes,acc_happy,405,0.13333335518836975,0.09318862706422806,0.17722029238939283,0.0,True
+mixed,box_number|numbered - box|positional,Numbers + numbered prompt vs boxes,bal,997,0.05354654788970947,0.020672266930341722,0.08688708394765854,0.001,True
+mixed,box_number|numbered - box|positional,Numbers + numbered prompt vs boxes,xref,997,-0.057171514543630925,-0.07938220133414192,-0.035499705839094016,0.0,True
+mixed,sov|numbered - box_number|numbered,"Landmarks (same overlay type, same prompt)",acc_all,997,-0.12738215923309326,-0.15763792097568513,-0.09890081584453583,0.0,True
+mixed,sov|numbered - box_number|numbered,"Landmarks (same overlay type, same prompt)",acc_expr,225,-0.11555555462837219,-0.18440095148980618,-0.052863433957099915,0.0,True
+mixed,sov|numbered - box_number|numbered,"Landmarks (same overlay type, same prompt)",acc_happy,405,-0.30123457312583923,-0.35238291323184967,-0.25260218456387523,0.0,True
+mixed,sov|numbered - box_number|numbered,"Landmarks (same overlay type, same prompt)",bal,997,-0.11572384834289551,-0.15531673058867454,-0.07862922921776773,0.0,True
+mixed,sov|numbered - box_number|numbered,"Landmarks (same overlay type, same prompt)",xref,997,0.09027081243731197,0.06521578179321003,0.11661155571768646,0.0,True
+mixed,box_number|numbered - box_number|positional,Using the number vs counting (same image),acc_all,997,0.00902712345123291,-0.004028403759002685,0.022483229637145996,0.208,False
+mixed,box_number|numbered - box_number|positional,Using the number vs counting (same image),acc_expr,225,0.008888885378837585,-0.015001884847879409,0.03334033414721485,0.634,False
+mixed,box_number|numbered - box_number|positional,Using the number vs counting (same image),acc_happy,405,0.0024691224098205566,-0.018738722801208495,0.024324461817741394,0.897,False
+mixed,box_number|numbered - box_number|positional,Using the number vs counting (same image),bal,997,0.01347959041595459,-0.005627672374248505,0.035084366053342766,0.182,False
+mixed,box_number|numbered - box_number|positional,Using the number vs counting (same image),xref,997,-0.0030090270812437314,-0.016495095586027422,0.008869200794059255,0.675,False
+mixed,sov|numbered - sov|positional,Using the number vs counting (SoV image),acc_all,997,0.005015045404434204,-0.008841076493263244,0.017801611125469206,0.564,False
+mixed,sov|numbered - sov|positional,Using the number vs counting (SoV image),acc_expr,225,-0.031111106276512146,-0.07258237339556217,0.00487864930182695,0.119,False
+mixed,sov|numbered - sov|positional,Using the number vs counting (SoV image),acc_happy,405,0.007407426834106445,-0.0025321319699287415,0.018423490971326815,0.238,False
+mixed,sov|numbered - sov|positional,Using the number vs counting (SoV image),bal,997,-0.012814640998840332,-0.03742085322737694,0.010141443461179726,0.274,False
+mixed,sov|numbered - sov|positional,Using the number vs counting (SoV image),xref,997,0.013039117352056206,0.0010224167151335797,0.025305570398076387,0.04,True
+mixed,box_number|positional - box|positional,Number tags themselves (same prompt),acc_all,997,0.06820458173751831,0.046511098742485046,0.09126245230436325,0.0,True
+mixed,box_number|positional - box|positional,Number tags themselves (same prompt),acc_expr,225,0.02222222089767456,-0.017176800966262815,0.05983103998005389,0.312,False
+mixed,box_number|positional - box|positional,Number tags themselves (same prompt),acc_happy,405,0.1308642327785492,0.09068641364574433,0.1708504550158977,0.0,True
+mixed,box_number|positional - box|positional,Number tags themselves (same prompt),bal,997,0.04006695747375488,0.014687538146972656,0.06600886434316634,0.006,True
+mixed,box_number|positional - box|positional,Number tags themselves (same prompt),xref,997,-0.05416248746238719,-0.07374485217284406,-0.03401974263964241,0.0,True
+mixed,sov|positional - plain|positional,SoV marks only (same prompt) vs Plain,acc_all,997,-0.05717149376869202,-0.08792689964175224,-0.026395709812641145,0.0,True
+mixed,sov|positional - plain|positional,SoV marks only (same prompt) vs Plain,acc_expr,225,-0.04888889193534851,-0.11405118014663458,0.017939233407378186,0.173,False
+mixed,sov|positional - plain|positional,SoV marks only (same prompt) vs Plain,acc_happy,405,-0.1604938507080078,-0.21370015479624271,-0.10653642043471337,0.0,True
+mixed,sov|positional - plain|positional,SoV marks only (same prompt) vs Plain,bal,997,-0.043598324060440063,-0.08244575262069702,-0.002510499954223651,0.037,True
+mixed,sov|positional - plain|positional,SoV marks only (same prompt) vs Plain,xref,997,0.005015045135406182,-0.022992943682598882,0.03270066840175084,0.768,False
+not_mixed,sov|numbered - plain|positional,SoV as designed vs Plain,acc_all,1819,-0.20175915956497192,-0.22971638441085815,-0.17415104806423187,0.0,True
+not_mixed,sov|numbered - plain|positional,SoV as designed vs Plain,acc_expr,76,-0.2894737124443054,-0.4117647118866444,-0.16047083698213113,0.0,True
+not_mixed,sov|numbered - plain|positional,SoV as designed vs Plain,acc_happy,1400,-0.25499996542930603,-0.28730505555868147,-0.22166004329919817,0.0,True
+not_mixed,sov|numbered - plain|positional,SoV as designed vs Plain,bal,1819,-0.14404526352882385,-0.20386596769094467,-0.0886201120913029,0.0,True
+not_mixed,box_number|numbered - plain|positional,Box+Number as designed vs Plain,acc_all,1819,0.03683346509933472,0.01664707362651825,0.0565952643752098,0.0,True
+not_mixed,box_number|numbered - plain|positional,Box+Number as designed vs Plain,acc_expr,76,-0.06578949093818665,-0.1578947313129902,0.038461536169052124,0.242,False
+not_mixed,box_number|numbered - plain|positional,Box+Number as designed vs Plain,acc_happy,1400,0.05785715579986572,0.03443403989076614,0.08064976036548611,0.0,True
+not_mixed,box_number|numbered - plain|positional,Box+Number as designed vs Plain,bal,1819,0.010539412498474121,-0.04025108516216278,0.06746112555265427,0.723,False
+not_mixed,box|positional - plain|positional,Boxes alone vs Plain (same prompt),acc_all,1819,-0.0054975152015686035,-0.021367549896240234,0.009805157780647271,0.513,False
+not_mixed,box|positional - plain|positional,Boxes alone vs Plain (same prompt),acc_expr,76,-0.03947368264198303,-0.1111111044883728,0.03948684036731713,0.435,False
+not_mixed,box|positional - plain|positional,Boxes alone vs Plain (same prompt),acc_happy,1400,-0.0021428465843200684,-0.019594308733940125,0.014466583728790254,0.827,False
+not_mixed,box|positional - plain|positional,Boxes alone vs Plain (same prompt),bal,1819,-0.034904539585113525,-0.07258820235729217,-0.0025766536593437896,0.026,True
+not_mixed,box_number|numbered - box|positional,Numbers + numbered prompt vs boxes,acc_all,1819,0.04233098030090332,0.024690306186676024,0.05996925979852676,0.0,True
+not_mixed,box_number|numbered - box|positional,Numbers + numbered prompt vs boxes,acc_expr,76,-0.026315808296203613,-0.12195119336247444,0.09090906456112861,0.644,False
+not_mixed,box_number|numbered - box|positional,Numbers + numbered prompt vs boxes,acc_happy,1400,0.06000000238418579,0.03971313238143921,0.08064614087343215,0.0,True
+not_mixed,box_number|numbered - box|positional,Numbers + numbered prompt vs boxes,bal,1819,0.045443952083587646,0.006080996990203857,0.11216954737901681,0.006,True
+not_mixed,sov|numbered - box_number|numbered,"Landmarks (same overlay type, same prompt)",acc_all,1819,-0.23859262466430664,-0.2644429564476013,-0.21247632652521134,0.0,True
+not_mixed,sov|numbered - box_number|numbered,"Landmarks (same overlay type, same prompt)",acc_expr,76,-0.22368420660495758,-0.34119967073202134,-0.10766666028648629,0.0,True
+not_mixed,sov|numbered - box_number|numbered,"Landmarks (same overlay type, same prompt)",acc_happy,1400,-0.31285712122917175,-0.341918034106493,-0.2846245184540749,0.0,True
+not_mixed,sov|numbered - box_number|numbered,"Landmarks (same overlay type, same prompt)",bal,1819,-0.15458467602729797,-0.22072114795446396,-0.08966125026345255,0.0,True
+not_mixed,box_number|numbered - box_number|positional,Using the number vs counting (same image),acc_all,0,,,,,False
+not_mixed,box_number|numbered - box_number|positional,Using the number vs counting (same image),acc_expr,0,,,,,False
+not_mixed,box_number|numbered - box_number|positional,Using the number vs counting (same image),acc_happy,0,,,,,False
+not_mixed,box_number|numbered - box_number|positional,Using the number vs counting (same image),bal,0,,,,,False
+not_mixed,sov|numbered - sov|positional,Using the number vs counting (SoV image),acc_all,0,,,,,False
+not_mixed,sov|numbered - sov|positional,Using the number vs counting (SoV image),acc_expr,0,,,,,False
+not_mixed,sov|numbered - sov|positional,Using the number vs counting (SoV image),acc_happy,0,,,,,False
+not_mixed,sov|numbered - sov|positional,Using the number vs counting (SoV image),bal,0,,,,,False
+not_mixed,box_number|positional - box|positional,Number tags themselves (same prompt),acc_all,0,,,,,False
+not_mixed,box_number|positional - box|positional,Number tags themselves (same prompt),acc_expr,0,,,,,False
+not_mixed,box_number|positional - box|positional,Number tags themselves (same prompt),acc_happy,0,,,,,False
+not_mixed,box_number|positional - box|positional,Number tags themselves (same prompt),bal,0,,,,,False
+not_mixed,sov|positional - plain|positional,SoV marks only (same prompt) vs Plain,acc_all,0,,,,,False
+not_mixed,sov|positional - plain|positional,SoV marks only (same prompt) vs Plain,acc_expr,0,,,,,False
+not_mixed,sov|positional - plain|positional,SoV marks only (same prompt) vs Plain,acc_happy,0,,,,,False
+not_mixed,sov|positional - plain|positional,SoV marks only (same prompt) vs Plain,bal,0,,,,,False

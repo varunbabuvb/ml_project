@@ -1,0 +1,181 @@
+group,level,reference,metric,contrast,diff,ci_lo,ci_hi,p_boot,excludes_zero
+race_group,Asian,Caucasian-like,acc_all,sov|numbered - plain|positional,0.009396464,-0.04226832240819931,0.0602853775024414,0.692,False
+race_group,Black,Caucasian-like,acc_all,sov|numbered - plain|positional,0.02383852,-0.03591008856892586,0.0902141362428665,0.454,False
+race_group,Asian,Caucasian-like,acc_all,box_number|numbered - plain|positional,0.00059723854,-0.04105785936117172,0.042226064205169646,0.96,False
+race_group,Black,Caucasian-like,acc_all,box_number|numbered - plain|positional,-0.009284198,-0.05635557472705841,0.04127853363752362,0.691,False
+race_group,Asian,Caucasian-like,acc_all,box|positional - plain|positional,0.010192752,-0.020109042525291443,0.04427949190139768,0.532,False
+race_group,Black,Caucasian-like,acc_all,box|positional - plain|positional,-0.012306511,-0.04470552802085876,0.022943668067455292,0.493,False
+race_group,Asian,Caucasian-like,acc_all,box_number|numbered - box|positional,-0.009595513,-0.04417840391397476,0.024889922142028797,0.577,False
+race_group,Black,Caucasian-like,acc_all,box_number|numbered - box|positional,0.0030223131,-0.04509008675813675,0.050163100659847255,0.903,False
+race_group,Asian,Caucasian-like,acc_all,sov|numbered - box_number|numbered,0.008799225,-0.035205279290676114,0.05376014187932014,0.699,False
+race_group,Black,Caucasian-like,acc_all,sov|numbered - box_number|numbered,0.03312272,-0.027132685482501983,0.08929961323738098,0.255,False
+race_group,Asian,Caucasian-like,acc_happy,sov|numbered - plain|positional,0.0011639297,-0.06910609975457191,0.06485306248068773,0.983,False
+race_group,Black,Caucasian-like,acc_happy,sov|numbered - plain|positional,0.08513889,0.0048446074128150945,0.16898871883749955,0.04,True
+race_group,Asian,Caucasian-like,acc_happy,box_number|numbered - plain|positional,-0.03213948,-0.08731071054935455,0.022854970395565003,0.245,False
+race_group,Black,Caucasian-like,acc_happy,box_number|numbered - plain|positional,0.0037397742,-0.052130314707756045,0.06856709569692605,0.932,False
+race_group,Asian,Caucasian-like,acc_happy,box|positional - plain|positional,-0.010157704,-0.05265594124794006,0.03488457202911372,0.661,False
+race_group,Black,Caucasian-like,acc_happy,box|positional - plain|positional,-0.009824097,-0.05193589180707932,0.03535109162330626,0.667,False
+race_group,Asian,Caucasian-like,acc_happy,box_number|numbered - box|positional,-0.021981776,-0.06966312527656555,0.025711099803447712,0.378,False
+race_group,Black,Caucasian-like,acc_happy,box_number|numbered - box|positional,0.013563871,-0.04298302829265595,0.07363861799240108,0.662,False
+race_group,Asian,Caucasian-like,acc_happy,sov|numbered - box_number|numbered,0.03330341,-0.025999718904495237,0.08919951021671292,0.263,False
+race_group,Black,Caucasian-like,acc_happy,sov|numbered - box_number|numbered,0.08139911,0.010357054322957993,0.1457065239548683,0.029,True
+race_group,Asian,Caucasian-like,acc_expr,sov|numbered - plain|positional,0.060876638,-0.07619449570775032,0.18294132836163035,0.341,False
+race_group,Black,Caucasian-like,acc_expr,sov|numbered - plain|positional,0.106331185,-0.017386456206440925,0.20866465270519255,0.093,False
+race_group,Asian,Caucasian-like,acc_expr,box_number|numbered - plain|positional,0.031899363,-0.08644650503993034,0.16188186965882767,0.62,False
+race_group,Black,Caucasian-like,acc_expr,box_number|numbered - plain|positional,-0.0044642687,-0.13515525832772254,0.12312195785343644,0.973,False
+race_group,Asian,Caucasian-like,acc_expr,box|positional - plain|positional,-0.013717517,-0.10803264416754245,0.07608261667191979,0.796,False
+race_group,Black,Caucasian-like,acc_expr,box|positional - plain|positional,0.0044642985,-0.035865138098597524,0.0430678769946098,0.933,False
+race_group,Asian,Caucasian-like,acc_expr,box_number|numbered - box|positional,0.04561688,-0.05103073827922344,0.160808777064085,0.395,False
+race_group,Black,Caucasian-like,acc_expr,box_number|numbered - box|positional,-0.008928567,-0.13514059372246265,0.11000885069370255,0.939,False
+race_group,Asian,Caucasian-like,acc_expr,sov|numbered - box_number|numbered,0.028977275,-0.09855965301394462,0.13797464258968814,0.642,False
+race_group,Black,Caucasian-like,acc_expr,sov|numbered - box_number|numbered,0.11079545,0.002810661867260933,0.2045508500188589,0.045,True
+gender,Male,Female,acc_all,sov|numbered - plain|positional,0.008347154,-0.03023180216550827,0.047065654397010756,0.691,False
+gender,Male,Female,acc_all,box_number|numbered - plain|positional,-0.03277546,-0.06558929234743119,-0.003014393150806434,0.026,True
+gender,Male,Female,acc_all,box|positional - plain|positional,-0.011261344,-0.0372663751244545,0.012695364654064154,0.386,False
+gender,Male,Female,acc_all,box_number|numbered - box|positional,-0.021514118,-0.05080908685922623,0.005040116608142835,0.11,False
+gender,Male,Female,acc_all,sov|numbered - box_number|numbered,0.041122615,0.006677985936403275,0.0759077787399292,0.018,True
+gender,Male,Female,acc_happy,sov|numbered - plain|positional,-0.050648898,-0.10259376019239426,0.001194954663515015,0.058,False
+gender,Male,Female,acc_happy,box_number|numbered - plain|positional,-0.04819143,-0.09029249995946884,-0.00784252732992175,0.02,True
+gender,Male,Female,acc_happy,box|positional - plain|positional,-0.028606653,-0.06098077893257141,0.0015621006488799568,0.07,False
+gender,Male,Female,acc_happy,box_number|numbered - box|positional,-0.019584775,-0.05722557157278061,0.01764349192380904,0.298,False
+gender,Male,Female,acc_happy,sov|numbered - box_number|numbered,-0.0024574697,-0.04838961809873581,0.04395627826452253,0.905,False
+gender,Male,Female,acc_expr,sov|numbered - plain|positional,0.014532998,-0.08492885529994965,0.12668407857418051,0.793,False
+gender,Male,Female,acc_expr,box_number|numbered - plain|positional,-0.009133548,-0.10179508700966836,0.08251875862479209,0.85,False
+gender,Male,Female,acc_expr,box|positional - plain|positional,0.028460413,-0.04116414599120617,0.09943136274814604,0.399,False
+gender,Male,Female,acc_expr,box_number|numbered - box|positional,-0.03759396,-0.11632226482033729,0.042037130519747494,0.335,False
+gender,Male,Female,acc_expr,sov|numbered - box_number|numbered,0.023666546,-0.07497626282274723,0.12325434684753413,0.614,False
+age_band,0-19,20-29,acc_all,sov|numbered - plain|positional,0.005562365,-0.05468667894601822,0.0660784289240837,0.865,False
+age_band,30-39,20-29,acc_all,sov|numbered - plain|positional,-0.006453693,-0.07324085533618926,0.056265242397785145,0.803,False
+age_band,40-59,20-29,acc_all,sov|numbered - plain|positional,-0.06810343,-0.1348453000187874,-0.005929164588451458,0.036,True
+age_band,60+,20-29,acc_all,sov|numbered - plain|positional,-0.080735296,-0.16802207231521607,0.006473167240619609,0.067,False
+age_band,0-19,20-29,acc_all,box_number|numbered - plain|positional,-0.0059759617,-0.053797881305217746,0.04187616556882855,0.785,False
+age_band,30-39,20-29,acc_all,box_number|numbered - plain|positional,-0.051882744,-0.11223113089799881,0.004335975646972622,0.074,False
+age_band,40-59,20-29,acc_all,box_number|numbered - plain|positional,-0.038750708,-0.08688100576400756,0.00950573831796644,0.111,False
+age_band,60+,20-29,acc_all,box_number|numbered - plain|positional,-0.064228415,-0.13492413014173507,-0.0013799622654915283,0.047,True
+age_band,0-19,20-29,acc_all,box|positional - plain|positional,-0.040473998,-0.08015898317098617,-0.0021284162998199655,0.039,True
+age_band,30-39,20-29,acc_all,box|positional - plain|positional,-0.013035834,-0.057418505847454074,0.026888190209865534,0.563,False
+age_band,40-59,20-29,acc_all,box|positional - plain|positional,-0.012105286,-0.05483306795358658,0.028360977768898007,0.554,False
+age_band,60+,20-29,acc_all,box|positional - plain|positional,-0.034130692,-0.0953844740986824,0.024193622171878808,0.227,False
+age_band,0-19,20-29,acc_all,box_number|numbered - box|positional,0.034498036,-0.007544465363025665,0.07878890931606293,0.11,False
+age_band,30-39,20-29,acc_all,box_number|numbered - box|positional,-0.03884691,-0.09077208936214447,0.01330292969942092,0.14,False
+age_band,40-59,20-29,acc_all,box_number|numbered - box|positional,-0.026645422,-0.06887969225645066,0.015300717949867247,0.229,False
+age_band,60+,20-29,acc_all,box_number|numbered - box|positional,-0.030097723,-0.09377257972955703,0.03033285737037656,0.354,False
+age_band,0-19,20-29,acc_all,sov|numbered - box_number|numbered,0.011538327,-0.04776911437511444,0.06855296492576596,0.669,False
+age_band,30-39,20-29,acc_all,sov|numbered - box_number|numbered,0.04542905,-0.0177346870303154,0.1047747015953064,0.161,False
+age_band,40-59,20-29,acc_all,sov|numbered - box_number|numbered,-0.029352725,-0.0932819552719593,0.028751929104328153,0.323,False
+age_band,60+,20-29,acc_all,sov|numbered - box_number|numbered,-0.01650688,-0.09967836812138557,0.06381539702415463,0.703,False
+age_band,0-19,20-29,acc_happy,sov|numbered - plain|positional,-0.06720215,-0.15343406200408935,0.015220352262258457,0.12,False
+age_band,30-39,20-29,acc_happy,sov|numbered - plain|positional,-0.013868779,-0.10872148051857948,0.07259036749601362,0.729,False
+age_band,40-59,20-29,acc_happy,sov|numbered - plain|positional,-0.08766416,-0.17661725208163262,-0.00595156848430634,0.039,True
+age_band,60+,20-29,acc_happy,sov|numbered - plain|positional,-0.063693345,-0.18565957993268967,0.05249085202813141,0.27,False
+age_band,0-19,20-29,acc_happy,box_number|numbered - plain|positional,0.009852767,-0.049791079759597776,0.06983368694782256,0.767,False
+age_band,30-39,20-29,acc_happy,box_number|numbered - plain|positional,-0.06570274,-0.1462438002228737,0.01206897944211956,0.092,False
+age_band,40-59,20-29,acc_happy,box_number|numbered - plain|positional,-0.05276543,-0.12093338072299957,0.013095328211784326,0.128,False
+age_band,60+,20-29,acc_happy,box_number|numbered - plain|positional,-0.09236944,-0.19911379516124725,0.0020767509937285687,0.055,False
+age_band,0-19,20-29,acc_happy,box|positional - plain|positional,-0.048514068,-0.09469737708568574,-0.003191784024238617,0.038,True
+age_band,30-39,20-29,acc_happy,box|positional - plain|positional,-0.0040695667,-0.05969090759754181,0.04889595806598662,0.855,False
+age_band,40-59,20-29,acc_happy,box|positional - plain|positional,-0.027303934,-0.08557644337415696,0.0277522936463356,0.331,False
+age_band,60+,20-29,acc_happy,box|positional - plain|positional,-0.0568766,-0.13993766903877258,0.024386125802993732,0.154,False
+age_band,0-19,20-29,acc_happy,box_number|numbered - box|positional,0.058366835,0.003987914323806763,0.11786181926727288,0.036,True
+age_band,30-39,20-29,acc_happy,box_number|numbered - box|positional,-0.06163317,-0.13731935024261474,0.009180279076099309,0.093,False
+age_band,40-59,20-29,acc_happy,box_number|numbered - box|positional,-0.025461495,-0.08523502647876739,0.03363035172224042,0.39,False
+age_band,60+,20-29,acc_happy,box_number|numbered - box|positional,-0.035492837,-0.12609953731298446,0.05301660150289524,0.435,False
+age_band,0-19,20-29,acc_happy,sov|numbered - box_number|numbered,-0.07705492,-0.1549957998096943,-0.003156276792287913,0.04,True
+age_band,30-39,20-29,acc_happy,sov|numbered - box_number|numbered,0.051833957,-0.03292583972215653,0.13020995557308196,0.249,False
+age_band,40-59,20-29,acc_happy,sov|numbered - box_number|numbered,-0.034898728,-0.11735084801912307,0.04009999111294746,0.376,False
+age_band,60+,20-29,acc_happy,sov|numbered - box_number|numbered,0.028676093,-0.07731773778796196,0.13663511946797366,0.603,False
+age_band,0-19,20-29,acc_expr,sov|numbered - plain|positional,-0.05416359,-0.20454777032136917,0.09808814339339728,0.499,False
+age_band,30-39,20-29,acc_expr,sov|numbered - plain|positional,-0.10891399,-0.32143440321087835,0.08889439161866901,0.34,False
+age_band,40-59,20-29,acc_expr,sov|numbered - plain|positional,-0.041375875,-0.18279919773340225,0.08727108575403678,0.549,False
+age_band,60+,20-29,acc_expr,sov|numbered - plain|positional,-0.25706214,-0.5269909560680389,0.0005917288362978325,0.053,False
+age_band,0-19,20-29,acc_expr,box_number|numbered - plain|positional,0.018054515,-0.13136172220110892,0.16707859560847269,0.861,False
+age_band,30-39,20-29,acc_expr,box_number|numbered - plain|positional,0.011613309,-0.1267519373446703,0.16226107142865653,0.887,False
+age_band,40-59,20-29,acc_expr,box_number|numbered - plain|positional,-0.025423735,-0.1396350897848606,0.08108798880130048,0.667,False
+age_band,60+,20-29,acc_expr,box_number|numbered - plain|positional,-0.025423735,-0.09821428395807744,0.04494635500013827,0.54,False
+age_band,0-19,20-29,acc_expr,box|positional - plain|positional,-0.0084745735,-0.11190895289182663,0.09640463702380654,0.909,False
+age_band,30-39,20-29,acc_expr,box|positional - plain|positional,-0.0084745735,-0.1304522268474102,0.11765748374164099,0.955,False
+age_band,40-59,20-29,acc_expr,box|positional - plain|positional,-0.037886344,-0.1615302823483944,0.07628835234791027,0.584,False
+age_band,60+,20-29,acc_expr,box|positional - plain|positional,-0.075141236,-0.24999998547136784,0.039690473675727804,0.37,False
+age_band,0-19,20-29,acc_expr,box_number|numbered - box|positional,0.026529089,-0.11017815694212914,0.1537945117801427,0.737,False
+age_band,30-39,20-29,acc_expr,box_number|numbered - box|positional,0.020087883,-0.12454706020653247,0.16919802948832507,0.804,False
+age_band,40-59,20-29,acc_expr,box_number|numbered - box|positional,0.0124626085,-0.06155895590782166,0.09932038281112904,0.872,False
+age_band,60+,20-29,acc_expr,box_number|numbered - box|positional,0.0497175,-0.059347599372267724,0.2197356805205343,0.638,False
+age_band,0-19,20-29,acc_expr,sov|numbered - box_number|numbered,-0.072218105,-0.2241755288094282,0.07399412430822844,0.401,False
+age_band,30-39,20-29,acc_expr,sov|numbered - box_number|numbered,-0.1205273,-0.3105251081287861,0.061013044230639905,0.244,False
+age_band,40-59,20-29,acc_expr,sov|numbered - box_number|numbered,-0.01595214,-0.15018427781760693,0.10558345410972832,0.885,False
+age_band,60+,20-29,acc_expr,sov|numbered - box_number|numbered,-0.23163842,-0.4954576872289181,0.02661997992545361,0.072,False
+face_size,medium,small,acc_all,sov|numbered - plain|positional,0.14042524,0.08368804007768631,0.19195300638675686,0.0,True
+face_size,large,small,acc_all,sov|numbered - plain|positional,0.25665602,0.2065617933869362,0.3044192694127559,0.0,True
+face_size,medium,small,acc_all,box_number|numbered - plain|positional,0.005395174,-0.03604113012552261,0.047707152366638174,0.775,False
+face_size,large,small,acc_all,box_number|numbered - plain|positional,-0.03620875,-0.0763119176030159,0.003988444805145227,0.074,False
+face_size,medium,small,acc_all,box|positional - plain|positional,0.023438275,-0.00865337997674942,0.057086369395256,0.15,False
+face_size,large,small,acc_all,box|positional - plain|positional,0.008519709,-0.021226359903812407,0.040989723801612823,0.599,False
+face_size,medium,small,acc_all,box_number|numbered - box|positional,-0.0180431,-0.054378414154052736,0.017400050163269027,0.315,False
+face_size,large,small,acc_all,box_number|numbered - box|positional,-0.044728458,-0.07896445095539092,-0.00860804319381714,0.014,True
+face_size,medium,small,acc_all,sov|numbered - box_number|numbered,0.13503006,0.08514708578586579,0.18209164440631864,0.0,True
+face_size,large,small,acc_all,sov|numbered - box_number|numbered,0.29286477,0.2509519696235657,0.3358429543673992,0.0,True
+face_size,medium,small,acc_happy,sov|numbered - plain|positional,0.19828779,0.1315392829477787,0.2665783122181891,0.0,True
+face_size,large,small,acc_happy,sov|numbered - plain|positional,0.37778947,0.31837302520871164,0.44065161496400834,0.0,True
+face_size,medium,small,acc_happy,box_number|numbered - plain|positional,0.04532677,-0.010954499989748002,0.09858577996492382,0.102,False
+face_size,large,small,acc_happy,box_number|numbered - plain|positional,-0.032874644,-0.08414963558316231,0.01732876151800154,0.198,False
+face_size,medium,small,acc_happy,box|positional - plain|positional,0.040228665,-0.0017070487141609193,0.08425835594534872,0.068,False
+face_size,large,small,acc_happy,box|positional - plain|positional,0.007346332,-0.029013516008853914,0.04426246881484985,0.69,False
+face_size,medium,small,acc_happy,box_number|numbered - box|positional,0.0050981045,-0.042756668478250506,0.05230379253625869,0.844,False
+face_size,large,small,acc_happy,box_number|numbered - box|positional,-0.040220976,-0.08660483509302139,0.00968524068593974,0.1,False
+face_size,medium,small,acc_happy,sov|numbered - box_number|numbered,0.15296099,0.09249720349907875,0.21186542958021162,0.0,True
+face_size,large,small,acc_happy,sov|numbered - box_number|numbered,0.41066408,0.3613462023437023,0.4625311151146888,0.0,True
+face_size,medium,small,acc_expr,sov|numbered - plain|positional,0.025938272,-0.13313370048999787,0.17211364470422266,0.739,False
+face_size,large,small,acc_expr,sov|numbered - plain|positional,0.111751676,-0.03540856000036001,0.2516345143318176,0.138,False
+face_size,medium,small,acc_expr,box_number|numbered - plain|positional,-0.036363646,-0.15330681018531322,0.08404136858880519,0.59,False
+face_size,large,small,acc_expr,box_number|numbered - plain|positional,-0.048558757,-0.15216153040528296,0.06009903736412524,0.385,False
+face_size,medium,small,acc_expr,box|positional - plain|positional,0.018181816,-0.06334026455879212,0.10342644564807414,0.693,False
+face_size,large,small,acc_expr,box|positional - plain|positional,0.018181816,-0.058983218669891355,0.09364964440464972,0.661,False
+face_size,medium,small,acc_expr,box_number|numbered - box|positional,-0.054545462,-0.15346395447850228,0.04747012332081786,0.304,False
+face_size,large,small,acc_expr,box_number|numbered - box|positional,-0.06674057,-0.16044174917042256,0.029634806886315264,0.162,False
+face_size,medium,small,acc_expr,sov|numbered - box_number|numbered,0.06230192,-0.07441188432276248,0.19645406082272512,0.405,False
+face_size,large,small,acc_expr,sov|numbered - box_number|numbered,0.16031043,0.03457451052963734,0.2811434224247932,0.012,True
+image_type,mixed,not_mixed,acc_all,sov|numbered - plain|positional,0.14960271,0.10859018415212632,0.19068010821938514,0.0,True
+image_type,mixed,not_mixed,acc_all,box_number|numbered - plain|positional,0.038392246,0.0037777826189994814,0.0721974819898605,0.03,True
+image_type,mixed,not_mixed,acc_all,box|positional - plain|positional,0.0034915209,-0.021411968767642973,0.029389682412147518,0.766,False
+image_type,mixed,not_mixed,acc_all,box_number|numbered - box|positional,0.034900725,0.004182711243629456,0.0664001926779747,0.026,True
+image_type,mixed,not_mixed,acc_all,sov|numbered - box_number|numbered,0.111210465,0.07166271582245827,0.1489665925502777,0.0,True
+image_type,mixed,not_mixed,acc_happy,sov|numbered - plain|positional,0.10191354,0.03705557137727738,0.16411287188529966,0.002,True
+image_type,mixed,not_mixed,acc_happy,box_number|numbered - plain|positional,0.09029099,0.038484145700931546,0.1429929822683334,0.001,True
+image_type,mixed,not_mixed,acc_happy,box|positional - plain|positional,0.01695764,-0.020169467478990556,0.05594554692506785,0.376,False
+image_type,mixed,not_mixed,acc_happy,box_number|numbered - box|positional,0.07333335,0.027400758862495423,0.12113553211092949,0.001,True
+image_type,mixed,not_mixed,acc_happy,sov|numbered - box_number|numbered,0.011622548,-0.046426033973693846,0.06682918593287461,0.691,False
+image_type,mixed,not_mixed,acc_expr,sov|numbered - plain|positional,0.20947371,0.06835072804242373,0.34541212022304524,0.003,True
+image_type,mixed,not_mixed,acc_expr,box_number|numbered - plain|positional,0.10134505,-0.019610920920968056,0.20814524441957472,0.094,False
+image_type,mixed,not_mixed,acc_expr,box|positional - plain|positional,0.043918133,-0.04110967926681042,0.12177463509142386,0.335,False
+image_type,mixed,not_mixed,acc_expr,box_number|numbered - box|positional,0.057426915,-0.06512877270579338,0.16378193497657775,0.314,False
+image_type,mixed,not_mixed,acc_expr,sov|numbered - box_number|numbered,0.10812865,-0.02357762772589922,0.23940178565680978,0.117,False
+reference_clear,extra/missing detections,detections = targets,acc_all,sov|numbered - plain|positional,-0.022561133,-0.06723138391971588,0.02401946559548377,0.303,False
+reference_clear,extra/missing detections,detections = targets,acc_all,box_number|numbered - plain|positional,0.10034096,0.06238177567720413,0.1352518483996391,0.0,True
+reference_clear,extra/missing detections,detections = targets,acc_all,box|positional - plain|positional,-0.0070496798,-0.03334349989891052,0.018952329456806184,0.574,False
+reference_clear,extra/missing detections,detections = targets,acc_all,box_number|numbered - box|positional,0.10739064,0.07584648877382279,0.13780099302530288,0.0,True
+reference_clear,extra/missing detections,detections = targets,acc_all,sov|numbered - box_number|numbered,-0.122902095,-0.16182283088564872,-0.08289149627089502,0.0,True
+reference_clear,extra/missing detections,detections = targets,acc_happy,sov|numbered - plain|positional,-0.013930529,-0.07122542783617973,0.04421523511409759,0.633,False
+reference_clear,extra/missing detections,detections = targets,acc_happy,box_number|numbered - plain|positional,0.15390098,0.10908396989107132,0.19830506891012192,0.0,True
+reference_clear,extra/missing detections,detections = targets,acc_happy,box|positional - plain|positional,-0.0029239655,-0.037276020646095274,0.030409911274909933,0.835,False
+reference_clear,extra/missing detections,detections = targets,acc_happy,box_number|numbered - box|positional,0.15682495,0.11664300560951232,0.19769454523921012,0.0,True
+reference_clear,extra/missing detections,detections = targets,acc_happy,sov|numbered - box_number|numbered,-0.16783151,-0.2166872426867485,-0.11822182461619381,0.0,True
+reference_clear,extra/missing detections,detections = targets,acc_expr,sov|numbered - plain|positional,-0.00884679,-0.1286111067980528,0.10610424280166623,0.915,False
+reference_clear,extra/missing detections,detections = targets,acc_expr,box_number|numbered - plain|positional,-0.005023569,-0.10374893676489591,0.08599753342568874,0.914,False
+reference_clear,extra/missing detections,detections = targets,acc_expr,box|positional - plain|positional,-0.027874097,-0.09261575601994991,0.037501031905412666,0.412,False
+reference_clear,extra/missing detections,detections = targets,acc_expr,box_number|numbered - box|positional,0.022850528,-0.06680506262928247,0.10403829980641598,0.577,False
+reference_clear,extra/missing detections,detections = targets,acc_expr,sov|numbered - box_number|numbered,-0.0038232207,-0.11520602479577065,0.11374377980828283,0.971,False
+n_targets,3+ faces,2 faces,acc_all,sov|numbered - plain|positional,-0.18308571,-0.23601603880524635,-0.12990598380565643,0.0,True
+n_targets,3+ faces,2 faces,acc_all,box_number|numbered - plain|positional,0.036293864,-0.0050167798995971674,0.0772397458553314,0.09,False
+n_targets,3+ faces,2 faces,acc_all,box|positional - plain|positional,-0.0153256655,-0.04622089713811874,0.015251083672046658,0.298,False
+n_targets,3+ faces,2 faces,acc_all,box_number|numbered - box|positional,0.05161953,0.015171426534652711,0.08832952380180353,0.004,True
+n_targets,3+ faces,2 faces,acc_all,sov|numbered - box_number|numbered,-0.21937957,-0.26433846801519395,-0.17142381072044377,0.0,True
+n_targets,3+ faces,2 faces,acc_happy,sov|numbered - plain|positional,-0.2150254,-0.2795131176710129,-0.15095989257097245,0.0,True
+n_targets,3+ faces,2 faces,acc_happy,box_number|numbered - plain|positional,0.017115533,-0.03279323577880859,0.06632934212684628,0.517,False
+n_targets,3+ faces,2 faces,acc_happy,box|positional - plain|positional,-0.018166542,-0.0582839235663414,0.020388533174991605,0.335,False
+n_targets,3+ faces,2 faces,acc_happy,box_number|numbered - box|positional,0.035282075,-0.008630090951919555,0.0800492569804191,0.117,False
+n_targets,3+ faces,2 faces,acc_happy,sov|numbered - box_number|numbered,-0.23214093,-0.28665257543325423,-0.17638899087905888,0.0,True
+n_targets,3+ faces,2 faces,acc_expr,sov|numbered - plain|positional,-0.11595005,-0.2604879133403301,0.047753444686531976,0.16,False
+n_targets,3+ faces,2 faces,acc_expr,box_number|numbered - plain|positional,0.06941526,-0.07143647745251655,0.1997943762689828,0.323,False
+n_targets,3+ faces,2 faces,acc_expr,box|positional - plain|positional,-0.0240964,-0.09349877312779427,0.04652521945536129,0.505,False
+n_targets,3+ faces,2 faces,acc_expr,box_number|numbered - box|positional,0.093511656,-0.03602752722799778,0.2221553120762109,0.158,False
+n_targets,3+ faces,2 faces,acc_expr,sov|numbered - box_number|numbered,-0.1853653,-0.333465663343668,-0.02503367960453035,0.017,True

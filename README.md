@@ -1,191 +1,222 @@
 # Cross-Cultural and Demographic Robustness of Set-of-Vision Prompting for Zero-Shot Emotion Recognition
 
-**Team Gradient | Phase 2 — Pipeline Implementation and Preliminary Testing**
+## Project Overview
 
-## Table of Contents
+This project investigates Set-of-Vision (SoV) prompting for zero-shot facial emotion recognition and evaluates its performance across different visual prompting configurations, demographic groups, and multi-face settings.
 
-- [Overview](#overview)
-- [What Are We Building?](#what-are-we-building)
-- [Pipeline Architecture](#pipeline-architecture)
-- [Prompting Strategies](#prompting-strategies)
-- [Implementation](#implementation)
-- [Preliminary Findings](#preliminary-findings)
-- [Limitations and Next Steps](#limitations-and-next-steps)
-- [Repository Structure](#repository-structure)
-- [Getting Started](#getting-started)
-- [Team](#team)
+The study evaluates two open vision-language models:
 
-## Overview
+- **LLaVA-1.5-7B**
+- **Qwen2.5-VL-7B-Instruct**
 
-This project investigates **Set-of-Vision (SoV) prompting** for zero-shot facial emotion recognition. The broader objective is to examine whether visual prompting affects recognition performance across demographic groups, including race, gender, and age.
+The project is organized into two phases:
 
-In Phase 2, we implement a modular pipeline for detecting faces, extracting facial landmarks, assigning face identifiers, constructing visual prompts, and running inference using a vision-language model (VLM).
+- **Phase 1 – Pipeline Implementation:** Face detection, image preprocessing, context-image generation, prompt construction, and model inference.
+- **Phase 2 – Experimental Evaluation:** Performance analysis, demographic robustness evaluation, multi-face experiments, tag probing, and ablation studies.
 
-The current phase establishes the technical foundation for the broader robustness study.
+The objective is to examine how visual prompting configurations influence emotion recognition performance and whether the observed behaviour varies across demographic groups and experimental settings.
 
-## What Are We Building?
+## Team Gradient
 
-Given an image containing multiple people, the pipeline:
-
-1. Detects faces and identifies their locations.
-2. Extracts facial landmarks, including the eyes, nose, and mouth corners.
-3. Assigns identifiers to detected faces.
-4. Creates visual overlays and different prompting conditions.
-5. Sends the prepared inputs to a vision-language model.
-6. Collects and examines the model's predictions.
-
-The central challenge is whether the model can reliably identify individual faces and produce consistent emotion predictions when multiple people appear in the same image.
-
-## Pipeline Architecture
-
-```mermaid
-flowchart TD
-    A["Input Image"] --> B["Face Detection"]
-    B --> C["Facial Landmark Extraction"]
-    C --> D["Face Numbering and Visual Overlays"]
-    D --> E["Visual Prompt Construction"]
-
-    E --> F["Plain Prompt"]
-    E --> G["Bounding Box"]
-    E --> H["Box + Number"]
-    E --> I["Set-of-Vision (SoV)"]
-
-    F --> J["Vision-Language Model Inference"]
-    G --> J
-    H --> J
-    I --> J
-
-    J --> K["Output Collection"]
-    K --> L["Preliminary Analysis"]
-```
-
-<details>
-<summary><strong>How does the pipeline work?</strong></summary>
-
-- **Face detection:** Locates faces and generates bounding boxes.
-- **Landmark extraction:** Identifies key facial points.
-- **Face numbering:** Assigns identifiers to help distinguish individuals.
-- **Visual prompt construction:** Prepares the input according to the selected prompting strategy.
-- **Model inference:** Obtains zero-shot emotion predictions from the vision-language model.
-- **Output analysis:** Examines face-count consistency, identifier recognition, and output quality.
-
-The four prompting strategies are alternative experimental conditions. Each prepared condition is passed to the inference stage, after which its output can be analyzed.
-
-</details>
-
-## Prompting Strategies
-
-The implementation compares four prompting conditions:
-
-| Strategy | Description |
-|---|---|
-| **Plain** | Uses the original image without additional face annotations. |
-| **Box** | Adds bounding boxes around detected faces. |
-| **Box + Number** | Adds numbered face identifiers alongside bounding boxes. |
-| **SoV** | Uses structured visual prompting to help the model reason about individual faces. |
-
-Comparing these conditions provides a basis for investigating how visual structure influences model responses.
-
-## Implementation
-
-The pipeline is divided into stages so that each part can be developed and tested independently.
-
-| File | Purpose |
-|---|---|
-| `sov_stage1_2_detect.py` | Face detection and landmark extraction |
-| `Sov_stage3_5_overlay.py` | Face numbering and visual overlays |
-| `sov_stage6_prompts.py` | Prompt construction and inference-job preparation |
-| `sov_stage7_infer.py` | Vision-language model inference |
-| `Sov_stage1_7.ipynb` | Notebook for running and inspecting the pipeline |
-| `requirements_pytorch.txt` | PyTorch-oriented dependency specification |
-
-The pipeline has been tested on a small set of sample images, producing face detections, visual overlays, prompt configurations, and inference outputs for inspection.
-
-## Preliminary Findings
-
-Initial testing confirms that the main processing stages can execute, but it also reveals challenges in model-output reliability.
-
-- **Face identification:** The model sometimes misses expected face identifiers or generates identifiers that do not correspond to detected faces.
-- **Face-count consistency:** The number of faces reported by the model can differ from the pipeline's detected face count.
-- **Output generation:** Some constrained responses encounter token limits, while free-form responses can be difficult to parse consistently.
-
-These observations are preliminary and based on a small sample. They are not ground-truth emotion recognition metrics and do not establish whether SoV outperforms the other prompting strategies.
-
-## Limitations and Next Steps
-
-<details>
-<summary><strong>Current limitations</strong></summary>
-
-- Evaluation has been conducted on a limited number of sample images.
-- Face identification and output formatting remain unreliable in some cases.
-- Ground-truth-based accuracy and macro-F1 comparisons have not yet been established.
-- Demographic subgroup analysis and mitigation experiments remain part of the broader research objective.
-
-</details>
-
-**Planned next steps:**
-
-1. Validate face detections, numbering, and visual overlays.
-2. Improve face-identifier readability and reduce incomplete or malformed outputs.
-3. Evaluate each prompting strategy on the same labeled examples.
-4. Calculate emotion recognition metrics and compare performance across demographic groups.
-5. Investigate and evaluate potential mitigation strategies.
-
-## Repository Structure
-
-```text
-ml_project/
-├── images/
-├── sov pipeline/
-│   ├── sov_stage1_2_detect.py
-│   ├── Sov_stage3_5_overlay.py
-│   ├── sov_stage6_prompts.py
-│   └── sov_stage7_infer.py
-├── ml_project.ipynb
-├── Set-of-Vision Pipeline Architecture.png
-├── requirements.txt
-└── README.md
-```
-
-*This is the intended structure. Adjust the paths if the files are organized differently in the repository.*
-
-## Getting Started
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/varunbabuvb/ml_project.git
-cd ml_project
-```
-
-### 2. Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-Check that the installed dependency versions are compatible with the code and inference environment.
-
-### 3. Run the notebook
-
-Open `ml_project.ipynb` in Jupyter Notebook or VS Code and execute the cells in order. Ensure the required input images, model configuration, and other dependencies are available.
-
-> **Note:** Full inference may require additional model access, hardware resources, and configuration.
-
-## Team
-
-**Team Gradient**
-
-| Team Member | ID |
+| Name | Roll Number |
 |---|---|
 | Thammandra Saketh Ram | B24DS034 |
 | Veeramallu Varun Babu | B24DS037 |
 | Yellampati Lukesh | B24DS039 |
 
-## Phase 2 Contribution
+## Models Evaluated
 
-We implement a modular Set-of-Vision (SoV) prompting pipeline for zero-shot facial emotion recognition, integrating face detection, facial landmark extraction, face numbering, visual prompt construction, and vision-language model inference. Our preliminary testing identifies practical challenges in face-identifier recognition and model-output generation, establishing a foundation for investigating the reliability of SoV prompting.
+| Model | Configuration |
+|---|---|
+| LLaVA-1.5-7B | 4-bit quantized inference |
+| Qwen2.5-VL-7B-Instruct | 4-bit quantized inference |
 
----
+Both models were evaluated using the same experimental framework to support comparison across prompting conditions.
 
-*This README describes Phase 2 implementation and preliminary testing. Claims about comparative performance and demographic robustness require further evaluation.*
+## Experimental Conditions
+
+The experiments investigate the following visual prompting configurations:
+
+1. **Plain:** Original face image without additional visual annotations.
+2. **Box:** Face image with bounding-box annotations.
+3. **Box + Number:** Bounding boxes with numerical identifiers.
+4. **SoV:** Set-of-Vision prompting configuration.
+
+Additional experiments include:
+
+- **Half-dot ablation:** Evaluates the effect of modifying the visual dot representation.
+- **Multi-face evaluation:** Examines performance when multiple faces appear in the same context image.
+- **Tag probing:** Investigates model responses to demographic and visual tags.
+- **Demographic analysis:** Evaluates performance across estimated demographic groups.
+
+## Repository Structure
+
+```text
+ML_PROJECT/
+│
+├── sov pipeline/                 # Phase 1 pipeline
+│   ├── sov_stage1_2_detect.py
+│   ├── Sov_stage3_5_overlay.py
+│   ├── sov_stage6_prompts.py
+│   └── sov_stage7_infer.py
+│
+├── phase2/
+│   ├── preprocessing/            # Data preprocessing and image preparation
+│   ├── inference/                # Job generation and model inference utilities
+│   ├── evaluation/               # Evaluation and analysis scripts
+│   └── notebooks/                # Phase 2 experiment notebooks
+│
+├── results/
+│   ├── raw/
+│   │   ├── llava/                # LLaVA inference outputs
+│   │   ├── qwen/                 # Qwen inference outputs
+│   │   ├── tag_probes/           # Tag-probing outputs
+│   │   └── jobs/                 # Generated inference jobs
+│   │
+│   ├── analysis/
+│   │   ├── comparison/
+│   │   ├── llava_core/
+│   │   ├── llava_multi/
+│   │   ├── qwen_core/
+│   │   └── qwen_multi/
+│   │
+│   ├── ablation/
+│   │   └── half_dot/
+│   │
+│   ├── class_contributions/
+│   │   ├── llava/
+│   │   └── qwen/
+│   │
+│   └── figures/
+│
+├── reports/
+│   ├── main.tex
+│   ├── references.bib
+│   ├── report ML PROJECT.pdf
+│   └── figures/
+│
+├── images/                       # Project images and visual assets
+├── requirements.txt
+├── .gitignore
+└── README.md
+```
+
+## Phase 1 – Pipeline Implementation
+
+Phase 1 establishes the SoV processing and inference pipeline.
+
+The main stages include:
+
+1. Face detection and preprocessing.
+2. Face cropping and dataset preparation.
+3. Context-image generation.
+4. Visual overlay and prompt construction.
+5. Vision-language model inference.
+
+The implementation is available in the `sov pipeline/` directory.
+
+## Phase 2 – Experimental Evaluation
+
+Phase 2 extends the pipeline to support systematic experiments and model evaluation.
+
+### Preprocessing
+
+- Face cropping and dataset preparation.
+- Construction of core and multi-face evaluation sets.
+- Context-image generation.
+- Preparation of inference jobs.
+
+### Inference
+
+- Generation of model-specific inference jobs.
+- LLaVA and Qwen inference.
+- Core and multi-face experiment execution.
+- Half-dot ablation inference.
+
+### Evaluation and Analysis
+
+- Accuracy and balanced accuracy evaluation.
+- Macro-F1 and class-level performance analysis.
+- Demographic group comparisons.
+- Multi-face evaluation.
+- Tag-probing analysis.
+- Model comparison and ablation analysis.
+
+The corresponding scripts, notebooks, and experiment outputs are organized under `phase2/` and `results/`.
+
+## Key Experimental Findings
+
+The core evaluation produced the following balanced accuracy results:
+
+| Condition | LLaVA-1.5-7B | Qwen2.5-VL-7B |
+|---|---:|---:|
+| Plain | 0.428 | 0.493 |
+| Box | 0.419 | 0.492 |
+| Box + Number | 0.417 | 0.498 |
+| SoV | 0.374 | 0.412 |
+
+Additional observations:
+
+- SoV prompting did not improve core balanced accuracy over the plain-image condition in either evaluated model.
+- The half-dot ablation showed improvements over the corresponding SoV condition in both models.
+- Neutral-class prediction behaviour differed substantially between LLaVA and Qwen.
+- Multi-face experiments showed different performance changes across the two models.
+- Demographic group analysis revealed variation across estimated demographic categories.
+
+These findings are specific to the evaluated datasets, models, and experimental configurations. They should not be interpreted as universal conclusions about the models.
+
+## Code Reproducibility
+
+The complete experimental workflow is documented in the Jupyter notebooks provided in the repository, particularly those under `phase2/notebooks/`.
+
+To reproduce the experiments:
+
+1. Clone the repository and install the required dependencies using `requirements.txt`.
+2. Open the relevant Jupyter notebook in Google Colab.
+3. Upload the required input files and datasets to the corresponding Google Colab `/content/` and Google Drive folders, following the directory structure expected by the notebook.
+4. Configure the required model and dataset paths.
+5. Execute the notebook cells in sequence to reproduce the preprocessing, inference, and evaluation stages.
+
+**Note:** The datasets and pretrained model weights are not included in this repository and must be obtained separately. GPU resources are required for model inference.
+
+The repository also contains saved inference outputs and analysis results, allowing the reported experiments to be inspected without rerunning the complete inference pipeline.
+
+## Results and Analysis
+
+The `results/` directory contains the experimental outputs:
+
+- `raw/` – Raw model predictions, inference jobs, and tag-probing outputs.
+- `analysis/` – Processed metrics and experimental analysis.
+- `ablation/` – Half-dot ablation results.
+- `class_contributions/` – Class-level contribution analysis.
+- `figures/` – Generated experimental visualizations.
+
+## Final Report
+
+The final project report is available at:
+
+`reports/report ML PROJECT.pdf`
+
+The LaTeX source and bibliography are also provided:
+
+- `reports/main.tex`
+- `reports/references.bib`
+
+All figures used in the report are stored in `reports/figures/`.
+
+## Technologies Used
+
+- Python
+- PyTorch
+- NumPy
+- Pandas
+- OpenCV
+- Hugging Face Transformers
+- Vision-Language Models
+- Jupyter Notebook
+- Google Colab
+- LaTeX
+
+## Acknowledgements
+
+We acknowledge the authors of the datasets, models, and research resources used in this project.

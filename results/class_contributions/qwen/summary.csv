@@ -1,0 +1,2 @@
+model,paired_faces,source_images,failed_or_error_rows_in_input,plain_balanced_accuracy,sov_balanced_accuracy,delta_balanced_accuracy_pp,sum_class_ba_contributions_pp,plain_accuracy,sov_accuracy,delta_accuracy_pp,sum_class_accuracy_contributions_pp,bootstrap_resamples,bootstrap_seed
+Qwen,1473,1461,0,0.49310104529616733,0.4121564072783585,-8.094463801780883,-8.094463801780876,0.5227427019687713,0.4378818737270876,-8.486082824168367,-8.486082824168363,2000,42

@@ -1,35 +1,87 @@
-# Windows system files
+# ==========================================
+# Operating system files
+# ==========================================
 desktop.ini
 Thumbs.db
 ehthumbs.db
+.DS_Store
 
-# Python cache
+# ==========================================
+# Python cache and compiled files
+# ==========================================
 __pycache__/
 *.py[cod]
+*$py.class
 
+# ==========================================
 # Virtual environments
+# ==========================================
 .venv/
 venv/
 env/
 
-# Jupyter checkpoints
+# ==========================================
+# Jupyter
+# ==========================================
 .ipynb_checkpoints/
 
+# ==========================================
 # Environment variables and secrets
+# ==========================================
 .env
 .env.*
+!.env.example
 
-# Model weights and caches
+# ==========================================
+# Model weights and checkpoints
+# ==========================================
 *.pt
 *.pth
 *.ckpt
 *.safetensors
+*.bin
+
+# ==========================================
+# Model and framework caches
+# ==========================================
 .cache/
 huggingface_cache/
+wandb/
+mlruns/
 
-
-
-# Temporary files
-*.tmp
+# ==========================================
+# Archives and backup files
+# ==========================================
+*.zip
+*.7z
+*.rar
+*.tar
+*.gz
 *.bak
-.DS_Store
+*.tmp
+
+# ==========================================
+# Duplicate / archived project material
+# ==========================================
+all files/
+
+# ==========================================
+# Local datasets and dataset-derived files
+# ==========================================
+fairface_all.csv
+fairface_all_1.csv
+core_set.csv
+dev_set.csv
+multi_faces.csv
+
+# ==========================================
+# Old report versions
+# ==========================================
+report intial draft.pdf
+report.pdf
+report_.pdf
+
+# ==========================================
+# Temporary project files
+# ==========================================
+project_structure.txt
